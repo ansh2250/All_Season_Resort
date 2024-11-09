@@ -1,0 +1,247 @@
+@media screen and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container-fluid {
+       max-width: 1000px;
+    }
+    /*Desktop nav part*/
+    .nav-item{
+        display: none;
+    }
+
+
+
+    /* Mobile Navigation Part */
+
+    .nav-item-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: lightgoldenrodyellow;
+        width: 100%;
+        height: auto;
+        position: sticky;
+        top: 0vw;
+        z-index: 9999;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .nav-item-mobile img{
+        width: 14vw;
+        margin-left: 35px;
+        margin-top: 5px;
+        transition: opacity 0.5s ease;
+    }
+    .nav-item-mobile .Mobile-nav.active + img {
+        opacity: 0; /* Fade out the logo when the active class is present */
+    }
+   
+
+    .nav-item-mobile .Mobile-nav{
+        display: inline-block;
+        width: 100%;
+        list-style-type: none;
+        gap: 1.3vw;
+        font-size: 2vw;
+        font-weight: 300;
+        font-family: poppins;
+        overflow: hidden; /* Hide overflow content when collapsed */
+        height: 0px; /* Initially set the height to 0 */
+        transition: height 5s ease; /* Add a transition effect on height */
+    }
+    .nav-item-mobile .Mobile-nav li a{
+        width: 100%;
+        padding: 2vw;
+        text-decoration: none;
+        color: brown;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .nav-item-mobile> .Mobile-nav li::after {
+        content: '';
+        width: 0%;
+        height: 0.2vw;
+        display: block;
+        transition: 0.5s;
+    }
+    .nav-item-mobile> .Mobile-nav li:hover::after {
+        width: 20%;
+    }
+    .nav-item-mobile .Mobile-nav.active {
+        display: block;
+        height: auto;
+    }
+    .hamburger{
+        display: block;
+        font-size: 33px;
+        color: #B4062B;
+        padding: 2vw 2vw;
+    }
+    /* Mobile Nav End */ 
+
+
+
+    header animation */
+    .header{
+        max-width: 1000px;
+        height:350px;
+    }
+    .banner-content {
+        width: 100%;
+        padding: 3vw 2vw;
+        position: relative;
+        top:30%;
+    }
+    .head {
+        font-size: 6vw;
+        font-weight: 700
+    }
+    
+    .banner-content span {
+        font-size: 3.5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    /*First Article*/
+    .first-article h1 {
+        max-width: 1000px;
+    }
+    .first-article span{
+        font-size:15px;
+        
+    }
+    .first-article p{
+        text-align: justify;
+        font-size:medium;
+    }
+
+    /*First Overview*/
+    .First-Overview {
+        padding:5vw;
+        height: auto;
+    }
+    .First-Overview h4{
+        font-size:14px;
+        padding:0.8rem 0;
+    }
+    /*Second Overview*/
+    .so{
+        height: auto;
+    }
+    .so h4{
+        font-size:medium;
+    }
+    .Second-Overview {
+        font-size: 5vw;
+        padding: 0.8rem 0;
+    }
+
+    /* second article */
+    .second-article h4{
+        font-size: medium;
+    }
+    .second-article> p{
+        font-size: small;
+    }
+    
+
+/*image gallery animation part start*/
+.gallery-slider {
+    padding: 1vw 2vw;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.panel {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    flex:0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 300ms ease-in;
+}
+
+.panel.active {
+    flex:5;
+}
+
+.panel:hover {
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+#container {
+    width: 100vw;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel:nth-of-type(0),
+.panel:nth-of-type(0) {
+    display: none;
+}
+
+/*Third Overview*/
+
+.Third-Overview {
+    margin: 2vw;
+    text-transform: titlecase;
+    color: black;
+}
+
+.Third-Overview h4 {
+    color:black;
+    font-size: 1rem;
+    font-family:poppins;
+    font-weight: bold;
+    text-align: center;
+    padding:0.3vw;
+    
+}
+
+.Third-Overview h6{
+    background-color: #B4062B;
+    color: white;
+    text-align: center;
+    padding: 0.3vw 0.6vw;
+    font-family: cursive;
+}
+
+.Third-Overview p{
+    line-height:1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-section{
+   display: none;
+}
+.mobile-footer{
+    display:flex;
+}
+
+center{
+    font-size: 12px;
+}
+
+
+
+/* service page */
+.service-banner{
+    min-height: 60vh;
+}
+.color-overlay h1{
+    /* font-size:calc(1.525rem + 3.3vw); */
+    font-size: 20px
+}
+.color-overlay span{
+    display: inline;
+    font-size: 20px;
+}
+
+}

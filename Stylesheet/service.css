@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* service banner */
+.service-banner{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 88vh;
+    overflow: hidden;
+}
+
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 70%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.color-overlay> h1{
+        font-size: 4vw;
+        font-family:'Times New Roman', Times, serif;
+    }
+.color-overlay span{
+    font-size:4vw;
+    text-align: center;
+    border-radius: 50px;
+    color: yellow;
+}
+
+/* service article one */
+.service-article-one{
+ 
+    padding: 25px 40px;
+    height:auto;
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
+
+}
+.service-article-one h5{
+    background-color:#B4062B;
+    color: white;
+    padding: 1vw;
+    text-align: center;
+    font-family:cursive;
+}
+.service-article-one p{
+    text-align: justify;
+    font-family: poppins 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 18px;
+}
+
+/* service card */
+
+.first-card{
+    /* box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5); */
+    border-radius: 5px;
+    padding: 1vw 1vw;
+}
+.card-img-top{
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+    padding: 1vw 1vw;
+}
+
+/* service aritcle two */
+.service-article{
+    margin-top: 122px;
+    margin-bottom: 122px;
+    height: 70vh;
+    background-image: url('/Images/service\ back.jpeg');
+    background-position: center;
+    background-size:cover;
+    position: sticky;
+}
+
+.over{
+    color: white;
+    background-color: rgba(0, 0, 0,0.6);
+}
+.over h1{
+    margin-top: 52px;
+    background-color:#B4062B;
+    color: white;
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: 600;
+    font-style:italic ;
+    text-transform: uppercase;
+}
+
+.over p{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 22px;
+    text-align:justify;
+}
+/* service hero one */
+
+.service-hero{
+    padding: 1vw 1vw;
+}
